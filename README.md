@@ -1,7 +1,7 @@
 # Next-Word-Prediction
 
 This repository contains scripts to create an n-gram model and a Streamlit application to showcase the model's word completion capabilities.
-
+The dataset which is en_US.twitter.txt can be found here: https://www.kaggle.com/datasets/crmercado/tweets-blogs-news-swiftkey-dataset-4million
 ## Files:
 
 - `n-gram.py`: This script is responsible for creating and saving the n-gram model.
