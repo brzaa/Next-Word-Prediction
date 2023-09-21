@@ -39,7 +39,7 @@ for n in range(1, 6):  # Building models from unigram to 5-gram
     n_gram_counts_list.append(count_n_grams(train, n))
 
 # Save the models and data
-output_dir = 'path_to_save_models_and_data/'
+output_dir = '/Users/bram/Downloads/'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
