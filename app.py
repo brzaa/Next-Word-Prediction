@@ -4,7 +4,7 @@ from collections import defaultdict
 
 def load_model(n):
     """Load the N-Gram model on demand."""
-    with open(f'/Users/bram/Downloads/n_gram_counts_{n}.pkl', 'rb') as file:
+    with open(f'/dir/n_gram_counts_{n}.pkl', 'rb') as file:
         return pickle.load(file)
 
 def predict_next_word(n, history, top_k=3):
