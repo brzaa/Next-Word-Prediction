@@ -26,7 +26,7 @@ def count_n_grams(data, n, start_token='<s>', end_token='<e>'):
     return n_grams
 
 # Load and preprocess the data
-with open('/Users/bram/Downloads/en_US.twitter.txt', 'r', encoding='utf-8') as file:
+with open('/dir/en_US.twitter.txt', 'r', encoding='utf-8') as file:
     data = file.read()
 
 tokenized_sentences = basic_preprocess_pipeline(data)
@@ -39,7 +39,7 @@ for n in range(1, 6):  # Building models from unigram to 5-gram
     n_gram_counts_list.append(count_n_grams(train, n))
 
 # Save the models and data
-output_dir = '/Users/bram/Downloads/'
+output_dir = '/dir/'
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
